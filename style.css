@@ -116,8 +116,8 @@ img:last-of-type {
 }
 
 iframe {
-  position: absolute;
   display: block;
+  z-index: 999;
 }
 
 .clearfix::after {
