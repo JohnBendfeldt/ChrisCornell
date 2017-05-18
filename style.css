@@ -34,6 +34,7 @@ p {
   padding: 25vh 10%;
   min-height: 100vh;
   width: 100vw;
+  transform-style: inherit;
 }
 
 img {
@@ -91,18 +92,23 @@ img:last-of-type {
   background-image: url("images/chrisc2.jpg");
   z-index:-1;
   opacity: .5;
+  transform: translateZ(-.25px) scale(1.5);
+  background-image: 100%;
 }
 
 #slide2:before {
-  background-image: url("images/chrisc4.jpg");
+  background-image: url("images/chrisc3.jpg");
   z-index:-1;
-  opacity: .5;
+  opacity: 1;
+  background-image: 100%;
 }
 
 #slide3:before {
-  background-image: url("images/chrisc3.jpg");
+  background-image: url("images/chrisc4.jpg");
   z-index:-1;
   opacity: .75;
+  transform: translateZ(-.25px) scale(1.5);
+  background-image: 100%;
 }
 
 #slide4 {
@@ -111,4 +117,11 @@ img:last-of-type {
 
 iframe {
   position: absolute;
+  display: block;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
 }
