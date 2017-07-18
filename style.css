@@ -15,7 +15,8 @@ body {
   overflow-x: hidden;
   font-family: 'Roboto Slab', serif;
   background-image: url("images/chrisc1.jpg");
-   background-attachment: fixed;  
+  background-attachment: fixed;  
+  background-color: #ECE6DE;
 }
 
 h1 {
@@ -92,15 +93,16 @@ img:last-of-type {
   background-image: url("images/chrisc2.jpg");
   z-index:-1;
   opacity: .5;
-  transform: translateZ(-.25px) scale(1.5);
-  background-image: 100%;
+  transform: translateZ(-.4px) scale(1.5);
+  background-size: 100%;
 }
 
 #slide2:before {
   background-image: url("images/chrisc3.jpg");
   z-index:-1;
   opacity: 1;
-  background-image: 100%;
+  background-size: 100%;
+  transform: translateZ(-.35px) scale(1.5);
 }
 
 #slide3:before {
@@ -108,11 +110,12 @@ img:last-of-type {
   z-index:-1;
   opacity: .75;
   transform: translateZ(-.25px) scale(1.5);
-  background-image: 100%;
+  background-size: 100%;
 }
 
 #slide4 {
   background: #222 .5;
+  transform: translateZ(-1px) scale(2);
 }
 
 iframe {
